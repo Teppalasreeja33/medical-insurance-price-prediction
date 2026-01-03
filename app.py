@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
 # Load the model
-model = joblib.load('model_joblib_gr')
+model = joblib.load('model_joblib')
 
 # Conversion rate (1 USD to INR)
 usd_to_inr = 83.00
@@ -116,3 +116,4 @@ def logout():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
